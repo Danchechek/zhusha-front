@@ -1,11 +1,7 @@
 scrollDown();
-function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
-        height: '360',
-        width: '640',
-        videoId: 'M7lc1UVf-VE'
-    });
-}
+
+
+
 window.addEventListener('click', function (event) {
 
         if (event.target.className === 'textarea') {
@@ -100,6 +96,7 @@ window.addEventListener("keypress", function (e) {
         scrollDown();
     }
 });
+
 
 
 function scrollDown() {

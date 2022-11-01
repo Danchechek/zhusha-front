@@ -33,6 +33,20 @@ iframe{
     margin-top: 36px;
 }
 
+.logo_place {
+    display: flex;
+}
+
+.map_place{
+    margin-left: auto;
+    margin-top: 36px;
+    width: 320px;
+    height: 400px;
+    opacity: 0.9;
+    border-radius: 30px;
+    background-color: #A32821;
+}
+
 .container_message_reactions {
     display: flex;
     flex-direction: row;
@@ -154,7 +168,12 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .anim_reactions {
+    height: 500px;
     display: flex;
+}
+
+.container_place{
+    height: 500px;
 }
 
 .container_reactions {
@@ -180,8 +199,10 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .reaction_img_1 {
+    position: absolute;
+    bottom: 40px;
+    right: 280px;
     cursor: pointer;
-    display: flex;
     animation-duration: 2s;
     height: 0;
     width: 0;
@@ -192,7 +213,9 @@ textarea::-webkit-scrollbar-thumb {
 
 
 .reaction_img_2 {
-    z-index: 2;
+    position: absolute;
+    bottom: 40px;
+    right: 210px;
     cursor: pointer;
     animation-duration: 2s;
     height: 0;
@@ -202,6 +225,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .reaction_img_3 {
+    position: absolute;
+    bottom: 40px;
+    right: 150px;
     cursor: pointer;
     animation-duration: 2s;
     height: 0;
@@ -211,6 +237,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .reaction_img_4 {
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
     cursor: pointer;
     animation-duration: 2s;
     height: 0;
@@ -239,23 +268,12 @@ textarea::-webkit-scrollbar-thumb {
     0% {
         height: 30px;
         width: 30px;
-        margin-left: 15%;
     }
-
-    10%{
-        margin-left: 18%;
-    }
-
     20% {
         opacity: 0.6;
-        margin-left: 16%;
     }
     40% {
         opacity: 1;
-        margin-left: 17%;
-    }
-    50%{
-        margin-left: 16%;
     }
     60% {
         opacity: 0.4;
@@ -264,10 +282,9 @@ textarea::-webkit-scrollbar-thumb {
         opacity: 1;
     }
     100% {
-        margin-left: 16%;
         height: 100px;
         width: 100px;
-        margin-bottom: calc(100% - 20px);
+        margin-bottom: 800px;
         opacity: 0;
     }
 }
@@ -276,7 +293,6 @@ textarea::-webkit-scrollbar-thumb {
     0% {
         height: 30px;
         width: 30px;
-        margin-left: 10px;
     }
 
     20% {
@@ -294,8 +310,7 @@ textarea::-webkit-scrollbar-thumb {
     100% {
         height: 100px;
         width: 100px;
-        margin-left: 20px;
-        margin-bottom: calc(100% - 20px);
+        margin-bottom: 800px;
         opacity: 0;
     }
 }
@@ -321,7 +336,7 @@ textarea::-webkit-scrollbar-thumb {
     100% {
         height: 80px;
         width: 80px;
-        margin-bottom: calc(100% - 20px);
+        margin-bottom: 800px;
         opacity: 0;
     }
 }
@@ -330,7 +345,6 @@ textarea::-webkit-scrollbar-thumb {
     0% {
         height: 30px;
         width: 30px;
-        margin-right: 13%;
     }
 
     20% {
@@ -348,11 +362,11 @@ textarea::-webkit-scrollbar-thumb {
     100% {
         height: 80px;
         width: 80px;
-        margin-right: 30%;
-        margin-bottom: calc(100% - 20px);
+        margin-bottom: 800px;
         opacity: 0;
     }
 }
+
 
 @keyframes close-anim {
     0%{
